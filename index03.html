@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0.user-scalable=no">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;}
+        li{list-style:none}
+        a{color: #333;text-decoration:none}
+        i,em{font-style:normal;font-weight:normal}
+        body{
+            width:100%;
+            height:100%;
+            padding:40px 0 40px 0 ;
+            position: relative;
+        }
+        header{
+            position: fixed;
+            top:0;
+            z-index: 999;
+            width:100%;
+            height:40px;
+            background: green;
+            text-align: center;
+            line-height: 40px;
+        }
+        header>h4{
+            font-size:18px;
+            color: #fff;
+            font-style: normal;
+        }
+        main{
+            width:100%;
+            height:100%;
+            overflow: auto;
+        }
+        main>ul>li{
+            position: relative;
+            width:100%;
+            height:80px;
+            border-bottom:#eee 1px solid;
+        }
+        main>ul .one{
+            width:100%;
+            height:40px;
+            border-bottom:1px solid #eee;
+        }
+        main>ul .one p{
+            font-size:16px;
+            padding-left:10px;
+            line-height: 40px;
+        }
+        main>ul .one a{
+            position: absolute;
+            top:7px;
+            right:6px;
+            display: block;
+            width:80px;
+            height:30px;
+            text-align: center;
+            line-height: 30px;
+            -webkit-border-radius:30px;
+            -moz-border-radius:30px;
+            border-radius:30px;
+            background: greenyellow;
+            color: #999;
+        }
+        main>ul>li>img{
+            position: absolute;
+            left:6px;
+            top:10px;
+            width:60px;
+            height:60px;
+        }
+        main>ul>li> .con{
+            padding:10px 80px;
+            width:50%;
+            height:80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+        }
+        main>ul>li p,
+        main>ul>li em{
+            font-size:12px;
+        }
+        main>ul>li>i{
+            position: absolute;
+            top:30px;
+            right:6px;
+            color: green;
+        }
+        footer{
+            position: fixed;
+            bottom:0;
+            z-index: 999;
+            width:100%;
+            height:40px;
+            background: #f5f5f5;
+        }
+        footer>a{
+            float: left;
+            width:33.333%;
+            height:40px;
+            line-height:40px;
+            text-align: center;
+        }
+        footer .addCo{
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h4>拉勾网</h4>
+</header>
+<main>
+    <ul>
+        <li class="one">
+            <p>10秒钟定制简历</p>
+            <a href="#">去登录</a>
+        </li>
+        <li>
+            <img src="images/d.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>e橘优品</h4>
+                    <p>技术支持[深圳]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>3k-5k</i>
+        </li>
+        <li>
+            <img src="images/d.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>e橘优品</h4>
+                    <p>外贸业务[深圳]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>6k-10k</i>
+        </li>
+        <li>
+            <img src="images/e.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>北京博特互动营销咨询有限公司</h4>
+                    <p>客户经理AIM[北京]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>8k-15k</i>
+        </li>
+        <li>
+            <img src="images/e.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>北京博特互动营销咨询有限公司</h4>
+                    <p>电商营运[北京]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>5k-10k</i>
+        </li>
+        <li>
+            <img src="images/f.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>展鸿软通</h4>
+                    <p>技术支持[深圳]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>5k-10k</i>
+        </li>
+        <li>
+            <img src="images/f.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>展鸿软通</h4>
+                    <p>数据运营专员[北京]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>5k-10k</i>
+        </li>
+        <li>
+            <img src="images/g.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>小亨科技</h4>
+                    <p>专利工程师（嵌入式）[广州]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>8k-13k</i>
+        </li>
+        <li>
+        <img src="images/g.jpg" alt="" class="logo">
+        <div class="con">
+            <a href="#">
+                <h4>小亨科技</h4>
+                <p>专利工程师[广州]</p>
+                <em>今天 16:14</em>
+            </a>
+        </div>
+        <i>8k-13k</i>
+    </li>
+        <li>
+            <img src="images/h.png" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>火才科技</h4>
+                    <p>APP测试助理岗位(可招应届生） [ 成都 ]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>6k-9k</i>
+        </li>
+        <li>
+            <img src="images/h.png" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>火才科技</h4>
+                    <p>UI设计师/平面设计 [ 成都 ]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>6k-9k</i>
+        </li>
+        <li>
+            <img src="images/d.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>e橘优品</h4>
+                    <p>技术支持[深圳]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>3k-5k</i>
+        </li>
+        <li>
+            <img src="images/d.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>e橘优品</h4>
+                    <p>外贸业务[深圳]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>6k-10k</i>
+        </li>
+        <li>
+            <img src="images/e.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>北京博特互动营销咨询有限公司</h4>
+                    <p>客户经理AIM[北京]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>8k-15k</i>
+        </li>
+        <li>
+            <img src="images/e.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>北京博特互动营销咨询有限公司</h4>
+                    <p>电商营运[北京]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>5k-10k</i>
+        </li>
+        <li>
+            <img src="images/f.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>展鸿软通</h4>
+                    <p>技术支持[深圳]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>5k-10k</i>
+        </li>
+        <li>
+            <img src="images/f.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>展鸿软通</h4>
+                    <p>数据运营专员[北京]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>5k-10k</i>
+        </li>
+        <li>
+            <img src="images/g.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>小亨科技</h4>
+                    <p>专利工程师（嵌入式）[广州]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>8k-13k</i>
+        </li>
+        <li>
+            <img src="images/g.jpg" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>小亨科技</h4>
+                    <p>专利工程师[广州]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>8k-13k</i>
+        </li>
+        <li>
+            <img src="images/h.png" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>火才科技</h4>
+                    <p>APP测试助理岗位(可招应届生） [ 成都 ]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>6k-9k</i>
+        </li>
+        <li>
+            <img src="images/h.png" alt="" class="logo">
+            <div class="con">
+                <a href="#">
+                    <h4>火才科技</h4>
+                    <p>UI设计师/平面设计 [ 成都 ]</p>
+                    <em>今天 16:14</em>
+                </a>
+            </div>
+            <i>6k-9k</i>
+        </li>
+    </ul>
+</main>
+<footer>
+    <a href="#" class="addCo">职位</a>
+    <a href="#">搜索</a>
+    <a href="#">我的</a>
+</footer>
+</body>
+</html>
